@@ -380,3 +380,44 @@
 //}
 
 
+//**********************
+//using function defined in another cpp file
+//#include <iostream>
+//using namespace std;
+//
+//int add(int x, int y);   // forward declaration using function prototype
+//int mi(int x, int y);
+//
+//int main(){
+//    cout << "The sum of 3 and 4 is " << add(3, 4) << endl;
+//    cout << "The difference between 3 and 4 is " << mi(3, 4) << endl;
+//    return 0;
+//}
+
+
+//**********************
+//using header files
+//#include <iostream>    //in system directory, come with the compiler
+//#include "basicooperation.h"
+//using namespace std;
+//
+//int main(){
+//    cout << "The sum of 10 and 4 is " << add(10, 4) << endl;
+//    cout << "The difference between 10 and 4 is " << mi(10, 4) << endl;
+//    return 0;
+//}
+
+
+//**********************
+//Including header files from other directories
+#include <iostream>
+#include "vector.h"
+using namespace std;
+
+int main(){
+    Vector<string> names;
+    names.add("Stu");
+    names.add("Marty");
+    names.insert(0, "Ed");
+    cout << names << endl;
+}

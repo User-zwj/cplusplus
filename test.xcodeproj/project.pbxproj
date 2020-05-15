@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FF2C103E244A3D1300C15FB9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2C103D244A3D1300C15FB9 /* main.cpp */; };
+		FF2C1049244D1FD000C15FB9 /* basicoperation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2C1048244D1FD000C15FB9 /* basicoperation.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		FF2C103A244A3D1300C15FB9 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF2C103D244A3D1300C15FB9 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		FF2C1044244AA91400C15FB9 /* poem.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = poem.txt; sourceTree = "<group>"; };
+		FF2C1048244D1FD000C15FB9 /* basicoperation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = basicoperation.cpp; sourceTree = "<group>"; };
+		FFA5A1F4244E115100AD3910 /* basicooperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basicooperation.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				FF2C1044244AA91400C15FB9 /* poem.txt */,
+				FFA5A1F4244E115100AD3910 /* basicooperation.h */,
 				FF2C103D244A3D1300C15FB9 /* main.cpp */,
+				FF2C1048244D1FD000C15FB9 /* basicoperation.cpp */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF2C1049244D1FD000C15FB9 /* basicoperation.cpp in Sources */,
 				FF2C103E244A3D1300C15FB9 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,11 +184,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
+				LIBRARY_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
 			};
 			name = Debug;
 		};
@@ -230,17 +240,28 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
+				LIBRARY_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				NEW_SETTING = "";
 				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "\"/Users/zwj/Desktop/cplusplus/assign0-starter/lib/StanfordCPPLib\"";
 			};
 			name = Release;
 		};
 		FF2C1042244A3D1300C15FB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				"COPY_HEADERS_UNIFDEF_FLAGS[sdk=*]" = "";
+				HEADER_SEARCH_PATHS = (
+					"/Users/zwj/Downloads/assign0-starter/lib/StanfordCPPLib",
+					"/Users/zwj/Downloads/assign0-starter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,7 +269,13 @@
 		FF2C1043244A3D1300C15FB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
+				COPY_HEADERS_RUN_UNIFDEF = NO;
+				HEADER_SEARCH_PATHS = (
+					"/Users/zwj/Downloads/assign0-starter/lib/StanfordCPPLib",
+					"/Users/zwj/Downloads/assign0-starter",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
